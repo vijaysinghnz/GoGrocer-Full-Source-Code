@@ -1,0 +1,51 @@
+{
+    "name": "bakerkretzmar/laravel-mapbox",
+    "description": "A Laravel package for managing Mapbox Datasets and Tilesets.",
+    "keywords": ["laravel", "mapbox"],
+    "homepage": "https://github.com/bakerkretzmar/laravel-mapbox",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "bakerkretzmar/zttp": "^0.6.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.2",
+        "orchestra/testbench": "^3.8",
+        "phpunit/phpunit": "^8.2"
+    },
+    "authors": [
+        {
+            "name": "Jacob Baker-Kretzmar",
+            "email": "jacobtbk@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bakerkretzmar\\LaravelMapbox\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bakerkretzmar\\LaravelMapbox\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bakerkretzmar\\LaravelMapbox\\LaravelMapboxServiceProvider"
+            ],
+            "aliases": {
+                "Mapbox": "Bakerkretzmar\\LaravelMapbox\\Facades\\Mapbox"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

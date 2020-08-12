@@ -1,0 +1,26 @@
+{
+    "name": "bakerkretzmar/zttp",
+    "description": "A developer-experience focused HTTP client, optimized for most common use cases.",
+    "keywords": ["http", "guzzle"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Wathan",
+            "email": "adam.wathan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.4",
+        "tightenco/collect": "^6.5"
+    },
+    "require-dev": {
+        "laravel/lumen-framework": "^6.2",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "files": [
+            "src/Zttp.php"
+        ]
+    }
+}

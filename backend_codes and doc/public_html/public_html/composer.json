@@ -1,0 +1,6 @@
+{
+    "require": {
+        "laravel/helpers": "^1.2",
+        "bakerkretzmar/laravel-mapbox": "^1.1"
+    }
+}
